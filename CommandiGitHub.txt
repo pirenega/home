@@ -1,0 +1,105 @@
+$ pwd
+/c/Users/gueor
+
+gueor@DESKTOP-72O2MQG MINGW64 ~
+$ cd D
+bash: cd: D: No such file or directory
+
+gueor@DESKTOP-72O2MQG MINGW64 ~
+$ cd /d
+
+gueor@DESKTOP-72O2MQG MINGW64 /d
+$ pwd
+/d
+
+gueor@DESKTOP-72O2MQG MINGW64 /d
+$ cd Lavoro/GitHubProva/
+
+gueor@DESKTOP-72O2MQG MINGW64 /d/Lavoro/GitHubProva
+$ ls
+Attivita.txt
+
+gueor@DESKTOP-72O2MQG MINGW64 /d/Lavoro/GitHubProva
+$ git init home
+Initialized empty Git repository in D:/Lavoro/GitHubProva/home/.git/
+
+gueor@DESKTOP-72O2MQG MINGW64 /d/Lavoro/GitHubProva
+$ cd home
+
+gueor@DESKTOP-72O2MQG MINGW64 /d/Lavoro/GitHubProva/home (master)
+$ git commit -m Attivita.txt
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'gueor@DESKTOP-72O2MQG.(none)')
+
+gueor@DESKTOP-72O2MQG MINGW64 /d/Lavoro/GitHubProva/home (master)
+$ git remote add origin https://github.com/pirenega/home.git
+
+gueor@DESKTOP-72O2MQG MINGW64 /d/Lavoro/GitHubProva/home (master)
+$ git commit -m Attivita.txt
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'gueor@DESKTOP-72O2MQG.(none)')
+
+gueor@DESKTOP-72O2MQG MINGW64 /d/Lavoro/GitHubProva/home (master)
+$ git config --global user.email "gueorguieva.i@gmail.com"
+
+gueor@DESKTOP-72O2MQG MINGW64 /d/Lavoro/GitHubProva/home (master)
+$ git commit -m Attivita.txt
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Attivita.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+gueor@DESKTOP-72O2MQG MINGW64 /d/Lavoro/GitHubProva/home (master)
+$ git add Attivita.txt
+
+gueor@DESKTOP-72O2MQG MINGW64 /d/Lavoro/GitHubProva/home (master)
+$ git commit -m Attivita.txt
+[master (root-commit) b609399] Attivita.txt
+ 1 file changed, 3 insertions(+)
+ create mode 100644 Attivita.txt
+
+gueor@DESKTOP-72O2MQG MINGW64 /d/Lavoro/GitHubProva/home (master)
+$
+
+gueor@DESKTOP-72O2MQG MINGW64 /d/Lavoro/GitHubProva/home (master)
+$
+
+gueor@DESKTOP-72O2MQG MINGW64 /d/Lavoro/GitHubProva/home (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 330 bytes | 330.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/pirenega/home.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+gueor@DESKTOP-72O2MQG MINGW64 /d/Lavoro/GitHubProva/home (master)
+$
