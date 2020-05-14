@@ -1,0 +1,3 @@
+#58258 supporto ai test
+Esecuzione ddl generato da starUML
+Controllo di consistenza del modello entita relazione con il modello originale
