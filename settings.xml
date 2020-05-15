@@ -1,0 +1,83 @@
+<!-- settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd" -->
+    
+<settings xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <!-- localRepository>D:\.m2\repository\</localRepository-->
+
+    <mirrors>
+        <!--mirror>
+            <id>nexus</id>
+            <mirrorOf>central</mirrorOf>
+            <url>http://10.6.23.18:9090/nexus/content/repositories/public</url>
+            <name>Santer Central maven repository</name>      
+        </mirror-->
+        <mirror>
+            <id>nexus</id>
+            <mirrorOf>*</mirrorOf>
+            <url>http://cm-maven.adlispa.local/nexus/content/groups/public</url>
+            <name>Lispa Central maven repository</name>    
+        </mirror>
+    </mirrors>
+    <!--pluginGroups>
+        <pluginGroup>com.atlassian.maven.plugins</pluginGroup>
+		<pluginGroup>org.mule.tools</pluginGroup>
+    </pluginGroups>
+    <servers>
+        <server>
+            <id>santer.snapshots</id>
+            <username>deployment</username>
+            <password>deployment123</password>
+        </server>
+        <server>
+            <id>santer.releases</id>
+            <username>deployment</username>
+            <password>deployment123</password>
+        </server>
+        <server>
+            <id>santer.thirdparty</id>
+            <username>deployment</username>
+            <password>deployment123</password>
+        </server>
+    </servers -->
+    <profiles>
+        <profile>
+            <id>nexus</id>
+      <!--Enable snapshots for the built in central repo to direct -->
+      <!--all requests to nexus via the mirror -->
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>http://central</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+				
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>central</id>
+                    <url>http://central</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>                      
+        </profile>
+    </profiles>
+    <activeProfiles>
+    <!--make the profile active all the time -->
+        <activeProfile>nexus</activeProfile>
+    </activeProfiles>
+</settings> 

@@ -49,6 +49,9 @@ $ git commit -m Attivita.txt
 
 *** Please tell me who you are.
 
+git clone https://igueorguieva@bitbucket.org/healthy-reply/ps-san.git
+
+
 Run
 
   git config --global user.email "you@example.com"

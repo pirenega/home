@@ -1,0 +1,13 @@
+1.vai in C:\Users\<tuo utente>
+2.vedi se hai la cartella .m2
+
+3. C:\Windows\System32\drivers\etc\hosts
+
+10.221.208.9      sgr-siss sgr-sire sgr-pro      sgr-siss.adlispa.local sgr-sire.adlispa.local sgr-pro.adlispa.local
+10.221.208.13     cm-maven  cm-maven.adlispa.local
+10.221.208.164 cm-lispa-scm.adlispa.local
+
+4. Sotto la cartella .m2 metti il file settings.xml
+
+5. Vedi ConfigurazioneEclipseMaven.jpg
+Inserire clean install -PDev -Dependency-check.skip=true
