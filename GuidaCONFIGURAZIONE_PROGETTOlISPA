@@ -10,4 +10,5 @@
 4. Sotto la cartella .m2 metti il file settings.xml
 
 5. Vedi ConfigurazioneEclipseMaven.jpg
-Inserire clean install -PDev -Dependency-check.skip=true
+Inserire clean install  -Pdev -Dependency-check.skip=true
+Profilo dev con d maiuscola.
